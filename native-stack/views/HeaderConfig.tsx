@@ -75,6 +75,7 @@ export default function HeaderConfig(props: Props) {
           ? headerStyle.backgroundColor
           : colors.card
       }
+      blurEffect={headerStyle.blurEffect}
       largeTitleBackgroundColor={headerLargeStyle.backgroundColor}>
       {headerRight !== undefined ? (
         <ScreenStackHeaderRightView>{headerRight()}</ScreenStackHeaderRightView>

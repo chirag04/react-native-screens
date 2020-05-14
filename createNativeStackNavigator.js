@@ -114,6 +114,7 @@ class StackView extends React.Component {
 
     if (headerStyle !== undefined) {
       headerOptions.backgroundColor = headerStyle.backgroundColor;
+      headerOptions.blurEffect = headerStyle.blurEffect;
     }
 
     const children = [];

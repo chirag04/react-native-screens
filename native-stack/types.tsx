@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
-import { ScreenProps } from 'react-native-screens';
+import {
+  ScreenProps,
+  ScreenStackHeaderConfigProps,
+} from 'react-native-screens';
 import {
   DefaultNavigatorOptions,
   Descriptor,
@@ -147,9 +150,11 @@ export type NativeStackNavigationOptions = {
   /**
    * Style object for header title. Supported properties:
    * - backgroundColor
+   * - blurEffect
    */
   headerStyle?: {
     backgroundColor?: string;
+    blurEffect?: ScreenStackHeaderConfigProps['blurEffect'];
   };
   /**
    * Controls the style of the navigation header when the edge of any scrollable content reaches the matching edge of the navigation bar. Supported properties:
